@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Automation Suite" verbose="1" thread-count="1" parallel="tests" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="utils.listeners.TestListener"/>
+        <listener class-name="utils.listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="API Tests">
+        <classes>
+            <class name="RunCuesTest">
+            </class>
+        </classes>
+    </test>
+</suite>
